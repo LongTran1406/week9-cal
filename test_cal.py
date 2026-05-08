@@ -1,4 +1,5 @@
 import pytest
+import unittest
 
 from cal import addition, substraction, multiplication, division
 
@@ -18,3 +19,6 @@ def test_division():
     assert division(2, 1) == 2
     with pytest.raises(ValueError):
         division(10, 0)
+
+if __name__ == '__main__':
+    unittest.main() 
